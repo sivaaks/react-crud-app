@@ -1,17 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { BrowserRouter,Route,Switch,Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Comments from './comments';
+import Home from './home';
+import About from './about';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+    <>
+        <BrowserRouter>
+            <Switch>
+            <Route path='/comments/:postId' component={Comments}></Route>
+            <Route path='/posts' component={App}></Route>
+            <Route path='/about' component={About}></Route>
+            <Route path='/' component={Home}></Route>
+            </Switch>
+        </BrowserRouter>
+    </>
+,document.querySelector('#root'));

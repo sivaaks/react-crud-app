@@ -1,0 +1,118 @@
+.home-container {
+  min-height: 340px;
+  background-color: beige;
+}
+
+.home-content {
+  padding: 20px;
+}
+
+.app-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-container {
+  display: flex;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(51, 43, 43);
+  font-size: 20px;
+}
+
+.hero-text {
+  font-size: 64px;
+  text-align: center;
+  padding: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.card-item {
+  width: 140px;
+  height: 70px;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.card-item:hover {
+  cursor: pointer;
+  background-color: burlywood;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.feature-card-item {
+  display: flex;
+  width: 18rem;
+  height: 6rem;
+  justify-content: center;
+  align-items: center;
+  background-color: chocolate;
+  color: #fff;
+  border-radius: 1rem;
+}
+.features-container {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.feature-card-item:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.about-container {
+  height: 320px;
+  background-color: cornsilk;
+  display: flex;
+  gap: 20%;
+  padding: 20px;
+}
+
+.about-heading {
+  padding: 10px;
+  font-size: 32px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.img {
+  width: 250px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.img-container {
+  padding-right: 30px;
+  margin-left: auto;
+}
+
+.about-key {
+  font-weight: 400;
+}
+
+.quote-text {
+  padding: 10px;
+  letter-spacing: 10px;
+  color: rgb(107, 106, 102);
+}
+
+.post-details-container {
+  display: flex;
+  justify-content: center;
+}
+
+code {
+  color: rgb(41, 39, 39);
+}
